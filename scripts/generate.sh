@@ -17,6 +17,6 @@ export GO111MODULE=on # Enable module mode
 PATH="$PATH:$(go env GOPATH)/bin"
 export PATH
 
-protoc --go_out=. --go_opt=paths=source_relative \
-    --go-grpc_out=. --go-grpc_opt=paths=source_relative \
+protoc --go_out=contactspb --go_opt=paths=source_relative \
+    --go-grpc_out=contactspb --go-grpc_opt=paths=source_relative \
     addressbook.proto
